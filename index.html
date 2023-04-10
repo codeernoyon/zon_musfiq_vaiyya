@@ -38,12 +38,29 @@
 
       page[size="A4"] {
         width: 21cm;
-        height: 31.8cm;
-        padding: 25mm 25mm 25mm 25mm;
+        height: 29.7cm;
+        padding: 25mm 25mm 10mm 25mm;
         page-break-after: always;
-        /* -webkit-print-color-adjust: exact; */
+        -webkit-print-color-adjust: exact;
         background-repeat: no-repeat;
         background-size: cover;
+      }
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        page {
+          margin: 0;
+          border: initial;
+          border-radius: initial;
+          width: initial;
+          min-height: initial;
+          box-shadow: initial;
+          background: initial;
+          page-break-after: always;
+        }
       }
       /* header */
       .header {
@@ -856,6 +873,7 @@
   </head>
   <body>
     <main>
+      <!-- <div size="A4" class="one_page"></div> -->
       <page size="A4" class="page_1">
         <div class="layout"></div>
         <div class="container">
