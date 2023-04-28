@@ -13,12 +13,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:wght@0,400,500,600,700,800,900"
-      rel="stylesheet"
-    />
+
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@0;400;500;600;700;800;900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
       body {
         margin: 0;
         padding: 0;
@@ -49,7 +46,6 @@
         size: A4;
         margin: 0;
       }
-
       @media print {
         page {
           margin: 0;
@@ -72,19 +68,10 @@
         height: 38px;
         width: 300px;
       }
-      .nav_right_side {
-        height: 100%;
-        display: flex;
-        place-items: center;
-        gap: 10px;
+      .header .nav_right_side img {
+        width: 200px;
       }
-      .header .circle img {
-        height: 73px;
-        width: 80px;
-      }
-      .header .nav_right_side_start {
-        display: flex;
-      }
+      /* page bottom */
       .page_button {
         margin-top: 20px;
         width: 100%;
@@ -93,8 +80,8 @@
         justify-content: center;
         color: #fdfcfc;
         background: #fac800;
-        padding: 12px 0;
-        font-size: 20px;
+        padding: 18px 0;
+        font-size: 23px;
         font-weight: 600;
         border-bottom-right-radius: 25px;
         border-top-left-radius: 25px;
@@ -141,19 +128,18 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-items: center;
         margin-top: 200px;
       }
       .page_1 .main_content h2 {
         font-size: 90px;
-        font-weight: 800;
+        font-weight: 900;
         line-height: 80px;
       }
-      .page_1 .main_content > span {
+      .page_1 .main_content div > span {
         width: fit-content;
         font-size: 23px;
         padding-bottom: 25px;
-        border-bottom: 1px solid rgba(135, 132, 132, 0.2);
+        border-bottom: 2px solid rgba(172, 168, 168, 0.2);
       }
       .page_1 .main_content span span {
         font-weight: 700;
@@ -178,7 +164,7 @@
       .bottom_content > span:nth-child(1) {
         width: 100%;
         text-align: end;
-        border-bottom: 1px solid rgba(135, 132, 132, 0.2);
+        border-bottom: 2px solid rgba(170, 167, 167, 0.2);
       }
       .bottom_content span span {
         font-weight: 700;
@@ -192,12 +178,21 @@
         text-align: center;
         margin-top: 100px;
       }
-      .page_2_upper_content_bottom {
+      .page_2_upper_content .dtl {
+        line-height: 23px;
+      }
+      .page_2_upper_content .person {
+        margin: 20px 0px;
+      }
+      .page_2_upper_content .person img {
+        width: 170px;
+      }
+      .page_2_upper_content .person .detail {
         display: flex;
         flex-direction: column;
-        margin-top: 15px;
+        gap: 5px;
       }
-      .page_2_upper_content_bottom span:nth-child(1) {
+      .page_2_upper_content .person .detail .name {
         font-size: 20px;
         font-weight: 600;
       }
@@ -217,7 +212,7 @@
       .page_2_bottom_content .title div {
         background: rgb(246, 197, 1);
         height: 2px;
-        width: 30%;
+        width: 32%;
       }
       .page_2 .address {
         display: flex;
@@ -227,8 +222,13 @@
       }
       .page_2 .address_item {
         display: flex;
-        place-items: center;
         gap: 8px;
+      }
+      .page_2 .address_item:nth-child(2) {
+        line-height: 25px;
+      }
+      .page_2 .contact .address_item:nth-child(2) {
+        margin-top: 10px;
       }
       .page_2 .address_item i {
         color: rgb(246, 197, 1);
@@ -245,9 +245,7 @@
         justify-content: space-between;
         place-items: center;
       }
-      .page_3 .main_content .icon {
-        font-size: 30px;
-      }
+
       .page_3 .main_content .center {
         display: flex;
         flex-direction: column;
@@ -255,9 +253,10 @@
         gap: 5px;
       }
       .page_3 .main_content .text_font {
-        font-weight: 700;
+        font-weight: 600;
         font-size: 28px;
-        line-height: 35px;
+        line-height: 28px;
+        margin: 5px 0px;
       }
       /* left */
       .page_3 .main_left_side {
@@ -374,9 +373,9 @@
       }
       /* main bottom content */
       .page_3 .main_bottom_content {
-        margin-top: 30px;
+        margin-top: 40px;
         width: 100%;
-        font-size: 12px;
+        font-size: 14px;
       }
 
       /* ----------- page 4 ------ */
@@ -389,8 +388,11 @@
         width: 100%;
         border-bottom: 1px solid #fac800;
       }
+      .page_4 .items:nth-child(4) {
+        border: none !important;
+      }
       .page_4 .items .title {
-        font-size: 23px;
+        font-size: 21px;
         font-weight: 600;
         padding: 10px 0;
       }
@@ -406,16 +408,16 @@
         width: 70px;
       }
       .page_4 .items:nth-child(2) .image img {
-        height: 140px;
-        width: 100px;
+        height: 115px;
+        width: 120px;
       }
       .page_4 .items:nth-child(3) .image img {
         height: 60px;
         width: 60px;
       }
       .page_4 .items:nth-child(4) .image img {
-        height: 130px;
-        width: 80px;
+        height: 110px;
+        width: 100px;
       }
 
       /* list */
@@ -423,7 +425,8 @@
         width: 80%;
       }
       .page_4 .items .content .list li {
-        font-size: 14px;
+        font-size: 16px;
+        margin: 3px 0px;
       }
       .page_4 .items .content .list li::marker {
         color: #fac800;
@@ -438,9 +441,12 @@
         width: 100%;
         border-bottom: 1px solid #fac800;
       }
+      .page_5 .items:nth-child(2) {
+        border-bottom: none;
+      }
       .page_5 .items .title {
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 22px;
+        font-weight: 600;
         padding: 10px 0;
       }
       .page_5 .items .content {
@@ -461,7 +467,8 @@
         width: 80%;
       }
       .page_5 .items .content .list li {
-        font-size: 14px;
+        font-size: 16px;
+        margin: 5px 0px;
       }
       .page_5 .items .content .list li::marker {
         color: #fac800;
@@ -472,14 +479,18 @@
         position: relative;
       }
       .page_6 .main_content .top_content p {
-        font-size: 25px;
+        font-size: 26px;
         text-align: center;
         color: #919292ac;
+        line-height: 35px;
+        letter-spacing: 0.5px;
       }
       .page_6 .main_content .middle_contetn .item {
         display: flex;
         gap: 10px;
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
         margin: 5px 0;
       }
 
@@ -497,14 +508,14 @@
         position: relative;
         background: rgb(237, 239, 241);
         padding: 40px 90px 40px 60px;
-        border-bottom-right-radius: 25px;
-        border-top-left-radius: 25px;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 40px;
         margin-top: 30px;
       }
       .page_6 .main_content .testimonial .style {
         position: absolute;
         bottom: -10px;
-        right: 50px;
+        right: 70px;
         background: rgb(237, 239, 241);
         height: 100px;
         width: 100px;
@@ -514,7 +525,7 @@
       .page_6 .main_content .testimonial .title {
         width: 100%;
         text-align: center;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 600;
       }
       .page_6 .main_content .testimonial .items {
@@ -532,7 +543,7 @@
         display: flex;
         place-items: center;
         gap: 10px;
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 400;
       }
       .page_6 .main_content .testimonial .item .top .title .stars {
@@ -549,7 +560,9 @@
         width: 70px;
       }
       .page_6 .main_content .testimonial .item .description {
-        font-size: 13px;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 0.5px;
         color: #9f9d9d;
       }
       /* ----------- page 7 ------ */
@@ -568,7 +581,7 @@
       }
       .page_7 .main_content .items .item_1 .cricle span {
         background: #fbfafa;
-        padding: 8px 16px;
+        padding: 8px 13px;
         border-radius: 100%;
         color: #fac800;
         font-weight: 600;
@@ -614,30 +627,35 @@
         left: 0px;
         background: #dbd6d6;
       }
-      .page_7 .main_content .items .left_side .item .top div {
+      .page_7 .main_content .items .left_side .item .top {
         position: relative;
         display: flex;
-        place-items: end;
-        gap: 10px;
+        gap: 15px;
       }
-      .page_7 .main_content .items .left_side .item .top div p {
-        font-size: 20px;
+      .page_7 .main_content .items .left_side .item .top .top_left {
+        display: flex;
+        place-items: end;
+      }
+      .page_7 .main_content .items .left_side .item .top .top_left p {
+        font-size: 22px;
+        letter-spacing: 0.5px;
         font-weight: 600;
         line-height: 30px;
       }
-      .page_7 .main_content .items .left_side .item .top div .image img {
+      .page_7 .main_content .items .left_side .item .top .top_left .image img {
         width: 100px;
         height: 90px;
       }
-      .page_7 .main_content .items .left_side .item .top div .circle span {
-        position: absolute;
-        top: -85px;
-        left: 35px;
+      .page_7 .main_content .items .left_side .item .top .circle {
         background: #fac800;
-        padding: 6px 14px;
+        height: 35px;
+        width: 35px;
         border-radius: 100%;
         color: #fefefd;
         font-weight: 600;
+        display: flex;
+        justify-content: center;
+        place-items: center;
       }
       .page_7
         .main_content
@@ -651,7 +669,9 @@
         left: 0px;
       }
       .page_7 .main_content .items .left_side .item .description {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
       }
       /* contetn right side */
       .page_7 .main_content .items .right_side {
@@ -663,6 +683,12 @@
         position: relative;
         margin: 50px 0px;
       }
+      .page_7 .main_content .items .right_side .item:nth-child(1) {
+        padding-bottom: 30px;
+      }
+      .page_7 .main_content .items .right_side .item:nth-child(2) {
+        margin: 30px 0px;
+      }
       .page_7 .main_content .items .right_side .item:nth-child(1)::before {
         content: "";
         position: absolute;
@@ -672,16 +698,18 @@
         right: 0px;
         background: #dbd6d6;
       }
-      .page_7 .main_content .items .right_side .item .top div {
-        position: relative;
+      .page_7 .main_content .items .right_side .item .top {
         display: flex;
         place-items: center;
-        gap: 10px;
-      }
-      .page_7 .main_content .items .right_side .item:nth-child(1) .top div {
         flex-direction: row-reverse;
+        gap: 100px;
       }
-      .page_7 .main_content .items .right_side .item .top div p {
+      .page_7 .main_content .items .right_side .item .top .top_left {
+        display: flex;
+        gap: 10px;
+        place-items: end;
+      }
+      .page_7 .main_content .items .right_side .item .top .top_left p {
         font-size: 20px;
         font-weight: 600;
       }
@@ -689,49 +717,39 @@
         width: 90px;
         height: 70px;
       }
-      .page_7
-        .main_content
-        .items
-        .right_side
-        .item:nth-child(2)
-        .top
-        div
-        .image {
-        position: absolute;
-        right: 30%;
-        top: -40px;
-      }
-      .page_7 .main_content .items .right_side .item .top div .circle span {
-        position: absolute;
-        top: -10px;
-        left: -90px;
+
+      .page_7 .main_content .items .right_side .item .top .circle span {
         background: #fac800;
-        padding: 6px 14px;
+        height: 35px;
+        width: 35px;
         border-radius: 100%;
         color: #fefefd;
         font-weight: 600;
+        display: flex;
+        justify-content: center;
+        place-items: center;
       }
-      .page_7
-        .main_content
-        .items
-        .right_side
-        .item:nth-child(2)
-        .top
-        div
-        .circle
-        span {
-        top: -20px;
-        left: 30px;
-      }
+
       .page_7 .main_content .items .right_side .item .description {
-        font-size: 13px;
-      }
-      .page_7 .main_content .items .right_side .item:nth-child(1) .description {
+        font-size: 16px;
+        letter-spacing: 0.3px;
+        line-height: 25px;
         text-align: end;
       }
+
       /* ----------- page 8 ------ */
+
       .page_8 .main_content {
         margin-top: 50px;
+      }
+      .page_8 .main_content .top_contetn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 30px 0px;
+      }
+      .page_8 .main_content .top_contetn span:nth-child(1) {
+        font-size: 12px;
       }
       .page_8 .main_content .top_bar {
         display: flex;
@@ -764,17 +782,37 @@
       .page_8 .main_content .botom_list_items {
         display: flex;
         flex-direction: column;
+        place-items: end;
         gap: 15px;
       }
       .page_8 .main_content .botom_list_items .item {
+        width: 40%;
         display: flex;
-        justify-content: end;
-        gap: 30px;
-      }
-      .page_8 .main_content .botom_list_items .item:nth-child(3) {
+        justify-content: space-between;
         font-weight: 600;
       }
+      .page_8 .main_content .botom_list_items .item .text {
+        text-align: end;
+        width: 70%;
+      }
+      .page_8 .main_content .botom_list_items .item_text {
+        text-align: end;
+        font-size: 12px;
+      }
+      .page_8 .main_content .bottom {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 17px;
+      }
+      .page_8 .main_content .bottom a {
+        font-size: 14px;
+        color: #0258ec;
+      }
+
       /* ----------- page 9 ------ */
+
       .page_9 .main_content .top_item {
         background: #fac800;
         padding: 30px 60px 40px 60px;
@@ -788,13 +826,7 @@
         font-size: 25px;
         font-weight: 600;
       }
-      .page_9 .main_content .top_item .cricle span {
-        background: #fbfafa;
-        padding: 8px 16px;
-        border-radius: 100%;
-        color: #fac800;
-        font-weight: 600;
-      }
+
       .page_9 .main_content .top_item h3 {
         font-size: 20px;
         font-weight: 600;
@@ -832,42 +864,53 @@
       }
       .page_9 .main_content .authorize {
         display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
       }
       .page_9 .main_content .authorize .left_side {
-        margin-top: 40px;
         display: flex;
         flex-direction: column;
         gap: 15px;
-        padding-right: 80px;
+        width: 50%;
       }
       .page_9 .main_content .authorize .left_side .item {
         position: relative;
         display: flex;
-        gap: 50px;
+        justify-content: space-between;
         place-items: center;
+        width: 45%;
       }
       .page_9 .main_content .authorize .left_side .item .title {
         font-weight: 600;
       }
       .page_9 .main_content .authorize .left_side .signature img {
-        width: 120px;
+        width: 80px;
         position: relative;
-        top: 50px;
+        top: 40px;
+        left: -40px;
       }
       .page_9 .main_content .authorize .right_side {
-        margin-top: 80px;
         display: flex;
         flex-direction: column;
         gap: 15px;
+        width: 50%;
       }
       .page_9 .main_content .authorize .right_side .item {
         position: relative;
         display: flex;
-        gap: 50px;
+        justify-content: space-between;
         place-items: center;
+        width: 45%;
       }
       .page_9 .main_content .authorize .right_side .item .title {
         font-weight: 600;
+      }
+      .page_9 .main_content .bottom {
+        margin-top: 110px !important;
+        letter-spacing: 0.3px;
+      }
+      .page_9 .main_content .bottom a {
+        color: #0258ec;
       }
     </style>
   </head>
@@ -887,15 +930,17 @@
               Voorstel <br />
               zonnepanelen
             </h2>
-            <span>Dhr. <span>Oost van den Bos</span></span>
-            <h5>
-              Buorren 46 <br />
-              9221TC Rottevalle
-            </h5>
+            <div>
+              <span>Dhr. <span>Albert Jager</span></span>
+              <h5>
+                Hans Lodeizenstraat 70<br />
+                1321SH Almere
+              </h5>
+            </div>
           </div>
           <div class="bottom_content">
-            <span>Opgesteld op <span>14-09-2022</span></span>
-            <span> Aanbod geldig t/m <span>28-09-2022</span></span>
+            <span>Opgesteld op <span>08-03-2023</span></span>
+            <span> Aanbod geldig t/m <span>18-03-2023</span></span>
           </div>
         </div>
       </page>
@@ -909,35 +954,28 @@
             </div>
             <!-- right side -->
             <div class="nav_right_side">
-              <span class="content">200+ beoordelingen</span>
-              <!-- circle -->
-              <div class="circle">
-                <img src="assets/circle.png" alt="" srcset="" />
-              </div>
-              <div class="nav_right_side_start">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
+              <img src="assets/header_right_side.png" alt="" srcset="" />
             </div>
           </div>
           <!-- content -->
           <div class="page_2_main_content">
             <div class="page_2_upper_content">
-              <h1 class="heading">Beste Oost,</h1>
-              <p>
+              <h1 class="heading">Beste Albert,</h1>
+              <p class="dtl">
                 Hier is het zonnepanelen voorstel die ik op basis van jouw
-                wensen en mogelijkheden voor je <br />
-                heb gemaakt. Ik hoor graag van je wat je ervan vindt en of we
-                voor jou aan de slag mogen <br />
-                gaan met het realiseren van jouw zonnepanelen installatie
+                wensen en mogelijkheden <br />
+                voor je heb gemaakt. Ik hoor graag wat je ervan vindt en of we
+                voor jou aan de slag <br />
+                mogen gaan met het realiseren van jouw zonnepanelen installatie.
               </p>
               <span>Zonnige groet,</span>
-              <div class="page_2_upper_content_bottom">
-                <span>Luca Ten Broeke</span>
-                <span> zonnepanelen adviseur</span>
+              <div class="person">
+                <!-- img  -->
+                <img src="assets/page_2/Zonnige.png" alt="image" />
+                <div class="detail">
+                  <span class="name">Floris Evers</span>
+                  <span class="description">Zonnepanelen adviseur</span>
+                </div>
               </div>
             </div>
             <div class="page_2_bottom_content">
@@ -950,31 +988,31 @@
                 <div class="user">
                   <div class="address_item">
                     <i class="fa-regular fa-user"></i>
-                    <span>Oost van den Bos </span>
+                    <span>Albert Jager</span>
                   </div>
                 </div>
                 <div class="address_item">
                   <i class="fa-sharp fa-solid fa-location-dot"></i>
                   <span
-                    >Buorren 46 <br />
-                    9221TC Rottevalle</span
+                    >Hans Lodeizenstraat 70 <br />
+                    1321SH Almere</span
                   >
                 </div>
                 <div class="contact">
                   <div class="address_item">
                     <i class="fa-regular fa-envelope"></i>
-                    <span>oostenytie@live.nl</span>
+                    <span>alantili@kpnmail.nl</span>
                   </div>
                   <div class="address_item">
                     <i class="fa-sharp fa-solid fa-phone-flip"></i>
-                    <span>+31620814868</span>
+                    <span>+31610166169</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="pages_bottom_content">
-            <span>Voorstel Zonnepanelen </span>
+            <span>Zonnepanelen voorstel van Zonduurzaam </span>
             <span>1</span>
           </div>
         </div>
@@ -989,18 +1027,7 @@
             </div>
             <!-- right side -->
             <div class="nav_right_side">
-              <span class="content">200+ beoordelingen</span>
-              <!-- circle -->
-              <div class="circle">
-                <img src="assets/circle.png" alt="" srcset="" />
-              </div>
-              <div class="nav_right_side_start">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
+              <img src="assets/header_right_side.png" alt="" srcset="" />
             </div>
           </div>
           <!-- In het button -->
@@ -1014,7 +1041,7 @@
               <div class="top center">
                 <!-- icon -->
                 <img src="assets/page_3/img_1.png" alt="image" srcset="" />
-                <span class="text_font">2.187 kwh</span>
+                <span class="text_font">3.192 kwh</span>
                 <span>pre jeer</span>
               </div>
               <!-- --- -->
@@ -1023,7 +1050,7 @@
                 <img src="assets/page_3/img_2.png" alt="image" srcset="" />
 
                 <span>Een <b>beter</b></span>
-                <span>pre jeer</span>
+                <span>Energielabel</span>
               </div>
             </div>
             <!-- middle -->
@@ -1032,8 +1059,8 @@
                 <!-- icon -->
                 <img src="assets/page_3/img_3.png" alt="image" srcset="" />
 
-                <span class="text_font">27%</span>
-                <span>Rendement eerste jarr</span>
+                <span class="text_font">22%</span>
+                <span>Rendement eerste jaar</span>
               </div>
               <!-- -- -->
               <div class="middle center">
@@ -1046,7 +1073,7 @@
                       class="fa-sharp fa-solid fa-euro-sign"
                       style="padding-right: 10px"
                     ></i
-                    >1.422</span
+                    >1.436</span
                   >
                   <span>besparing</span>
                   <span>pre jeer</span>
@@ -1056,8 +1083,8 @@
               <div class="bottom center">
                 <!-- icon -->
                 <img src="assets/page_3/img_5.png" alt="image" srcset="" />
-                <span>je <span style="font-weight: 600">elgen</span></span>
-                <span>opgewekte stroom</span>
+                <span>Je <span style="font-weight: 600">elgen</span></span>
+                <span>Opgewekte stroom</span>
               </div>
             </div>
             <!-- right side -->
@@ -1066,8 +1093,8 @@
                 <div class="content center">
                   <img src="assets/page_3/img_6.png" alt="image" srcset="" />
                   <span class="text_font"
-                    >3 jaar en 7 <br />
-                    maanden jr</span
+                    >4 jaar en 4 <br />
+                    maanden</span
                   >
                   <span>terugverdientijd</span>
                 </div>
@@ -1077,10 +1104,10 @@
               <div class="bottom center">
                 <!-- icon -->
                 <img src="assets/page_3/img_7.png" alt="image" srcset="" />
-                <span style="font-size: 30px">
-                  > <span class="text_font"> 2.5 %</span></span
+                <span style="font-size: 30px"
+                  ><span class="text_font"> 2,5% +</span></span
                 >
-                <span>wahdsjhdu jdksk</span>
+                <span>Waardestijging woning</span>
               </div>
             </div>
           </div>
@@ -1088,18 +1115,18 @@
           <div class="main_bottom_content">
             <p>
               * De berekening is gemaakt aan de hand van een geldend
-              stroomtarief van € 0,65 en een teruglevertarief van € 0,07. Bij de
+              stroomtarief van € 0,45 en een teruglevertarief van € 0,12. Bij de
               bovenstaande berekening zijn onzekerheden van toepassing. Bij de
               berekening van de opbrengst wordt met vele factoren rekening
-              gehouden, maar het aantal uren zonneschijn iseen variabele
-              factor,zodat de uiteindelijke op- brengst hoger of lager kan
-              uitvallen. Om die reden kunt u aan deze berekening geen rechten
+              gehouden, maar het aantal uren zonneschijn is een variabele
+              factor, waardoor de uiteindelijke opbrengst hoger of lager kan
+              uitvallen. Om die reden kun je aan deze berekening geen rechten
               ontlenen.
             </p>
           </div>
           <!-- bottom contetn -->
           <div class="pages_bottom_content">
-            <span>Voorstel Zonnepanelen </span>
+            <span>Zonnepanelen voorstel van Zonduurzaam </span>
             <span>2</span>
           </div>
         </div>
@@ -1114,18 +1141,7 @@
             </div>
             <!-- right side -->
             <div class="nav_right_side">
-              <span class="content">200+ beoordelingen</span>
-              <!-- circle -->
-              <div class="circle">
-                <img src="assets/circle.png" alt="" srcset="" />
-              </div>
-              <div class="nav_right_side_start">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
+              <img src="assets/header_right_side.png" alt="" srcset="" />
             </div>
           </div>
           <!-- In het button -->
@@ -1155,7 +1171,7 @@
               </div>
             </div>
             <div class="items">
-              <div class="title">Enphase Micro-omvormer IQ7 plus</div>
+              <div class="title">Enphase Micro-omvormer IQ8plus</div>
               <div class="content">
                 <!-- image -->
                 <div class="image">
@@ -1164,11 +1180,21 @@
                 <!-- list -->
                 <div class="list">
                   <ul>
-                    <li>Parallel geschakelde omvormer</li>
-                    <li>Ideaal voor daken met schaduw</li>
-                    <li>Geleverd met Envoy</li>
-                    <li>Geen omvormer in de woning</li>
                     <li>25 jaar productgarantie</li>
+                    <li>
+                      Parallel geschakelde omvormer, geen centrale omvormer in
+                      de woning
+                    </li>
+                    <li>
+                      Burst Mode Technologie: start eerder op en produceert
+                      langer door
+                    </li>
+                    <li>Zonduurzaam is Enphase goud installateur</li>
+                    <li>
+                      Gouden partners hebben een lange staat van dienst als het
+                      gaat om het installeren van Enphase-producten en zorgen
+                      voor een consistente klantervaring.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -1207,9 +1233,10 @@
                 <div class="list">
                   <ul>
                     <li>
-                      In sommige gevallen plaatsen wij deze module. Deze dient
-                      als uitbreiding op de meterkast om alle benodigdheden op
-                      aan te sluiten voor het Enphase systeem.
+                      Indien er geen ruimte meer is in de meterkast dan plaatsen
+                      wij deze module gratis. Deze dient als uitbreiding op de
+                      meterkast om alle benodigdheden op aan te sluiten voor het
+                      Enphase systeem.
                     </li>
                   </ul>
                 </div>
@@ -1217,7 +1244,7 @@
             </div>
             <!-- bottom content -->
             <div class="pages_bottom_content">
-              <span>Voorstel Zonnepanelen </span>
+              <span>Zonnepanelen voorstel van Zonduurzaam </span>
               <span>3</span>
             </div>
           </div>
@@ -1233,18 +1260,7 @@
             </div>
             <!-- right side -->
             <div class="nav_right_side">
-              <span class="content">200+ beoordelingen</span>
-              <!-- circle -->
-              <div class="circle">
-                <img src="assets/circle.png" alt="" srcset="" />
-              </div>
-              <div class="nav_right_side_start">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
+              <img src="assets/header_right_side.png" alt="" srcset="" />
             </div>
           </div>
 
@@ -1280,7 +1296,6 @@
                 <!-- list -->
                 <div class="list">
                   <ul>
-                    <li>BTW teruggave service</li>
                     <li>Hulp bij aanmelden netbeheerder</li>
                     <li>Persoonlijk contact & ondersteuning</li>
                     <li>100% garantie op klanttevredenheid</li>
@@ -1292,7 +1307,7 @@
 
             <!-- bottom content -->
             <div class="pages_bottom_content">
-              <span>Voorstel Zonnepanelen </span>
+              <span>Zonnepanelen voorstel van Zonduurzaam </span>
               <span>4</span>
             </div>
           </div>
@@ -1308,18 +1323,7 @@
             </div>
             <!-- right side -->
             <div class="nav_right_side">
-              <span class="content">200+ beoordelingen</span>
-              <!-- circle -->
-              <div class="circle">
-                <img src="assets/circle.png" alt="" srcset="" />
-              </div>
-              <div class="nav_right_side_start">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
+              <img src="assets/header_right_side.png" alt="" srcset="" />
             </div>
           </div>
           <!-- In het button -->
@@ -1341,9 +1345,9 @@
                 <!-- contetn -->
                 <div class="contetn">
                   <p>
-                    Wij geloven dat duurzame projecten nog beter worden wanneer
+                    Wij geloven dat een duurzaam project op z’n best is wanneer
                     er een <br />
-                    goede band is tussen de mensen die hierbij betrokken zijn.
+                    goede band is tussen alle mensen die er bij betrokken zijn.
                   </p>
                 </div>
 
@@ -1356,11 +1360,11 @@
                 <!-- contetn -->
                 <div class="contetn">
                   <p>
-                    Daarom schenken we veel aandacht aan de opbouw en het
-                    onderhoud van onze <br />
-                    relaties. Dit doen we door een zo eerlijk mogelijk advies
-                    uit te brengen, door heldere <br />
-                    afspraken te maken en door deze afspraken na te komen
+                    Daarom vinden we het bij Zonduurzaam belangrijk om onze
+                    energie te stoppen <br />
+                    in het opbouwen van een sterke band met onze leveranciers,
+                    installateurs en <br />
+                    bovenal met jou als klant.
                   </p>
                 </div>
                 <!-- image -->
@@ -1372,9 +1376,9 @@
                 <!-- contetn -->
                 <div class="contetn">
                   <p>
-                    Dit geldt voor zowel onze leveranciers, installateurs en
-                    natuurlijk voor jou als <br />
-                    klant. Wij stoppen niet voordat jij tevreden bent en blijft
+                    Zo geven we een eerlijk advies, maken we heldere afspraken
+                    en komen <br />
+                    we onze afspraken na, zodat jij tevreden bent én blijft.
                   </p>
                 </div>
                 <!-- image -->
@@ -1446,7 +1450,7 @@
             </div>
             <!-- bottom content -->
             <div class="pages_bottom_content">
-              <span>Voorstel Zonnepanelen </span>
+              <span>Zonnepanelen voorstel van Zonduurzaam </span>
               <span>5</span>
             </div>
           </div>
@@ -1462,18 +1466,7 @@
             </div>
             <!-- right side -->
             <div class="nav_right_side">
-              <span class="content">200+ beoordelingen</span>
-              <!-- circle -->
-              <div class="circle">
-                <img src="assets/circle.png" alt="" srcset="" />
-              </div>
-              <div class="nav_right_side_start">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
+              <img src="assets/header_right_side.png" alt="" srcset="" />
             </div>
           </div>
           <!-- content -->
@@ -1484,11 +1477,10 @@
                 <div class="cricle">
                   <span>1</span>
                 </div>
-                <h3>Bevestig deze offerte aan ons</h3>
+                <h3>Bevestig dit voorstel</h3>
                 <p>
-                  Als je door wilt gaan met dit voorstel dan maken dan klik je
-                  op <br />
-                  onderstaande button voor akkoord.
+                  Klik op de onderstaande knop om digitaal akkoord te gaan met
+                  dit voorstel
                 </p>
                 <div class="button">
                   <div>
@@ -1502,50 +1494,48 @@
                 <div class="left_side">
                   <div class="item">
                     <div class="top">
-                      <div>
-                        <p>
-                          Een technisch <br />
-                          specialist neem <br />
-                          contact met je op
-                        </p>
+                      <div class="top_left">
+                        <p>Technische schouw</p>
                         <div class="image">
                           <img src="assets/page_7/img_2.png" alt="" />
                         </div>
-                        <div class="circle">
-                          <span>2</span>
-                        </div>
+                      </div>
+                      <div class="circle">
+                        <span>2</span>
                       </div>
                     </div>
                     <div class="description">
                       <p>
-                        De adviseur gaat met jouw situatie aan de slag <br />
-                        en zal samen met jou kijken naar een <br />
-                        installatiedatum op het door <br />
-                        jou gekozen moment.
+                        Je ontvangt een e-mail <br />
+                        waarin we vragen om een aantal foto’s. <br />
+                        Zodra je die hebt <br />
+                        aangeleverd neemt een technisch <br />
+                        specialist contact met <br />
+                        je op om het dak, <br />
+                        de meterkast en de kabelroute <br />
+                        te bespreken.
                       </p>
                     </div>
                   </div>
                   <div class="item">
                     <div class="top">
-                      <div>
-                        <p>Monitoring</p>
+                      <div class="top_left">
+                        <p>Installatiedag</p>
                         <div class="image">
                           <img src="assets/page_7/img_4.png" alt="" />
                         </div>
-                        <div class="circle">
-                          <span>3</span>
-                        </div>
+                      </div>
+                      <div class="circle">
+                        <span>4</span>
                       </div>
                     </div>
                     <div class="description">
                       <p>
-                        Vanaf nu is het <br />
-                        genieten van jouw eigen opgewekte <br />
-                        stroom. Tevens regelen wij zoals <br />
-                        afgesproken de BTW teruggave en <br />
-                        mocht u in de toekomst nog vragen <br />
-                        of wensen hebben, dan staan wij <br />
-                        voor jou klaar.
+                        Onze installateurs komen bij je langs en <br />
+                        nemen eerst de plannen samen met je door. <br />
+                        Daarna gaan ze aan de slag en zorgen ze <br />
+                        ervoor dat je aan het eind van de dag kunt <br />
+                        gaan genieten van je eigen opgewekte stroom.
                       </p>
                     </div>
                   </div>
@@ -1553,52 +1543,47 @@
                 <div class="right_side">
                   <div class="item">
                     <div class="top">
-                      <div>
-                        <p>
-                          Dag van de <br />
-                          installatie
-                        </p>
+                      <div class="top_left">
                         <div class="image">
                           <img src="assets/page_7/img_3.png" alt="" />
                         </div>
-                        <div class="circle">
-                          <span>3</span>
-                        </div>
+                        <p>Planning</p>
+                      </div>
+                      <div class="circle">
+                        <span>4</span>
                       </div>
                     </div>
                     <div class="description">
                       <p>
-                        Op de afgesproken dag vindt <br />
-                        de installatie plaats. De installatie duurt meestal
-                        <br />
-                        een dag. Wij gaan pas naar huis als alles werkt <br />
-                        zodat jij zorgeloos kunt genieten van je eigen <br />
-                        opgewekte stroom.
+                        Zodra alle technische voorbereidingen zijn <br />
+                        getroffen neemt de afdeling planning contact met <br />
+                        je op om samen te kijken naar de ideale <br />
+                        installatiedatum.
                       </p>
                     </div>
                   </div>
                   <div class="item">
                     <div class="top">
-                      <div>
-                        <p>Toekomst</p>
+                      <div class="top_left">
                         <div class="image">
                           <img src="assets/page_7/img_5.png" alt="" />
                         </div>
-                        <div class="circle">
-                          <span>5</span>
-                        </div>
+                        <p>Service</p>
+                      </div>
+                      <div class="circle">
+                        <span>5</span>
                       </div>
                     </div>
                     <div class="description">
                       <p>
-                        Ook als jouw zonnepanelen eenmaal hun werk doen <br />
-                        blijven we aan je zijde. Denk bijvoorbeeld aan
-                        onderhoud, uitbreiding of andere zaken die voor jou
+                        Je zonnepanelen zijn geïnstalleerd! Wij zorgen <br />
+                        ervoor dat je binnen 7 dagen je opbrengst <br />
+                        inzichtelijk krijgt in de app. Wij helpen je bij het
                         <br />
-                        in de toekomst relevant kunnen zijn. Je kan altijd
+                        aanmelden bij de netbeheerder. Ook in de <br />
+                        toekomst zijn we er voor jou! Denk bijvoorbeeld aan
                         <br />
-                        contact met ons blijven opnemen en dan helpen we je
-                        graag verder.
+                        onderhoud, uitbreiding of een thuisbatterij.
                       </p>
                     </div>
                   </div>
@@ -1607,7 +1592,7 @@
             </div>
             <!-- bottom content -->
             <div class="pages_bottom_content">
-              <span>Voorstel Zonnepanelen </span>
+              <span>Zonnepanelen voorstel van Zonduurzaam </span>
               <span>6</span>
             </div>
           </div>
@@ -1623,18 +1608,7 @@
             </div>
             <!-- right side -->
             <div class="nav_right_side">
-              <span class="content">200+ beoordelingen</span>
-              <!-- circle -->
-              <div class="circle">
-                <img src="assets/circle.png" alt="" srcset="" />
-              </div>
-              <div class="nav_right_side_start">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
+              <img src="assets/header_right_side.png" alt="" srcset="" />
             </div>
           </div>
           <!-- In het button -->
@@ -1643,6 +1617,11 @@
           </div>
           <!-- content -->
           <div class="main_content">
+            <!-- top content  -->
+            <div class="top_contetn">
+              <span>Eenmalige kosten </span>
+              <span> Alle bedragen zijn incl. btw tenzij anders vermeld</span>
+            </div>
             <!-- top bar -->
             <div class="top_bar">
               <div class="left">
@@ -1656,20 +1635,20 @@
               <div class="top_1 item">
                 <div class="left">
                   <span></span>
-                  <span>6x Jinko Tiger Neo + Enphase IQ7+ (schuin) </span>
+                  <span>8x Jinko Tiger Neo + Enphase (plat)</span>
                 </div>
-                <span>€ 5.121,00</span>
+                <span>€ 6.501,00</span>
               </div>
               <div class="item">
                 <div class="left">
-                  <span class="number"> 6</span>
+                  <span class="number"> 8</span>
                   <span>- Jinko Tiger Neo N-Type </span>
                 </div>
               </div>
               <div class="item">
                 <div class="left">
-                  <span class="number"> 6</span>
-                  <span>- Enphase Micro-omvormer IQ7 plus </span>
+                  <span class="number"> 8</span>
+                  <span>- Enphase Micro-omvormer IQ8plus</span>
                 </div>
               </div>
               <div class="item">
@@ -1693,7 +1672,7 @@
               <div class="item">
                 <div class="left">
                   <span class="number">1</span>
-                  <span>- Onderconstructie schuin dak</span>
+                  <span>- Onderconstructie plat dak</span>
                 </div>
               </div>
               <div class="item">
@@ -1702,37 +1681,44 @@
                   <span>- Serviceplan</span>
                 </div>
               </div>
-              <div class="item">
-                <div class="left" style="gap: 90px">
-                  <span class="number">1</span>
-                  <span>Kabeltrace langer dan 15m</span>
-                </div>
-                <span>€ 150,00</span>
-              </div>
             </div>
-            <!-- bottom content -->
+            <!-- bottom list content -->
             <div class="botom_list_items">
               <div class="item">
-                <span>Totaal incl. btw</span>
-                <span>€ 6.377,91</span>
+                <span class="text">Eenmalige kosten excl. btw </span>
+                <span>€ 6.501,00</span>
               </div>
               <div class="item">
-                <span>Btw-teruggave </span>
-                <span>- € 1.106,91</span>
+                <span class="text">Btw 0% </span>
+                <span>€ 0,00 </span>
               </div>
               <div class="item">
-                <span>Netto investering </span>
-                <span>€ 5.271,00</span>
+                <span class="text">Eenmalige kosten incl. btw </span>
+                <span>€ 6.501,00</span>
               </div>
-              <div class="item">
+              <div class="item_text">
                 <span
-                  >Netto investering is exclusief een forfait van € 60
+                  >Vanaf 1 januari 2023 betaal je geen btw meer over de levering
+                  en installatie van zonnepanelen op of bij je woning.
                 </span>
               </div>
             </div>
+            <!-- bottom -->
+            <div class="bottom">
+              <span
+                >Wil je jouw zonnepanelen voordelig financieren? Klik dan op de
+                link hieronder voor de mogelijkheden. Indien je nog vragen hebt
+                neem dan contact met ons op.</span
+              >
+              <a
+                href="https://www.lenderspender.nl/geld-lenen/duurzaam-gefinancierd?utm_source=zonduurzaam&utm_medium=affiliate&"
+                target="_blank"
+                >Bekijk financieringsmogelijkheden</a
+              >
+            </div>
             <!-- bottom content -->
             <div class="pages_bottom_content">
-              <span>Voorstel Zonnepanelen </span>
+              <span>Zonnepanelen voorstel van Zonduurzaam</span>
               <span>7</span>
             </div>
           </div>
@@ -1748,30 +1734,19 @@
             </div>
             <!-- right side -->
             <div class="nav_right_side">
-              <span class="content">200+ beoordelingen</span>
-              <!-- circle -->
-              <div class="circle">
-                <img src="assets/circle.png" alt="" srcset="" />
-              </div>
-              <div class="nav_right_side_start">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
+              <img src="assets/header_right_side.png" alt="" srcset="" />
             </div>
           </div>
 
           <!-- content -->
           <div class="main_content">
             <div class="top_item">
-              <h2>Vervolgstappen</h2>
+              <h2>Aan de slag</h2>
 
               <h3>Ben je er klaar voor?</h3>
               <p>
-                Klik dan op onderstaande button om akkoord te gaan met dit
-                voorstel.
+                Klik dan op onderstaande knop om akkoord te gaan met dit
+                voorstel
               </p>
               <div class="button">
                 <div>
@@ -1779,17 +1754,17 @@
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
-              <div style="margin-top: 15px">
+              <div style="margin-top: 20px">
                 <span><i class="fa-regular fa-circle-check"></i></span>
                 <span style="font-weight: 600; font-size: 20px"> 9,3 </span>
                 <span>op klantenvertellen.nl </span>
-                <span style="font-weight: 600">200+</span>
+                <span style="font-weight: 600">360+</span>
                 <span>reviews</span>
               </div>
-              <div style="margin-top: 10px">
+              <div style="margin-top: 15px">
                 <span><i class="fa-regular fa-circle-check"></i></span>
                 <span style="font-weight: 600; font-size: 20px">
-                  €1.421,55
+                  €1.436,40
                 </span>
                 <span>besparing per jaar </span>
               </div>
@@ -1804,10 +1779,6 @@
                   <span
                     ><i class="fa-regular fa-envelope"></i> info@zonduurzaam.nl
                   </span>
-                  <span>
-                    <i class="fa-brands fa-whatsapp"></i> Whatsapp
-                    <i class="fa-sharp fa-solid fa-phone-flip"></i
-                  ></span>
                 </div>
               </div>
             </div>
@@ -1815,14 +1786,11 @@
               <div class="left_side">
                 <div class="item">
                   <span class="title">Naam:</span>
-                  <span
-                    >Oost van den <br />
-                    Bos</span
-                  >
+                  <span>Albert Jager</span>
                 </div>
                 <div class="item">
                   <span class="title">Datum:</span>
-                  <span>21-09-2022</span>
+                  <span>08-03-2023</span>
                 </div>
                 <div class="item signature">
                   <span class="title">Handtekening:</span>
@@ -1832,20 +1800,24 @@
               <div class="right_side">
                 <div class="item">
                   <span class="title">Naam:</span>
-                  <span
-                    >Luca Ten <br />
-                    Broeke</span
-                  >
+                  <span>Floris Evers</span>
                 </div>
                 <div class="item">
                   <span class="title">Datum:</span>
-                  <span>14-09-2022</span>
+                  <span>08-03-2023</span>
                 </div>
               </div>
             </div>
+            <!-- bottom -->
+            <div class="bottom">
+              <span
+                >Op dit voorstel zijn de <a href="">algemene voorwaarden</a> van
+                Zonduurzaam B.V. van toepassing.
+              </span>
+            </div>
             <!-- bottom content -->
             <div class="pages_bottom_content">
-              <span>Voorstel Zonnepanelen </span>
+              <span>Zonnepanelen voorstel van Zonduurzaam</span>
               <span>8</span>
             </div>
           </div>
