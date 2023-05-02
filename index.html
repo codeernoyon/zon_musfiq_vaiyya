@@ -31,6 +31,7 @@
         display: flex;
         flex-direction: column;
         page-break-after: always;
+        background: #fff;
       }
 
       page[size="A4"] {
@@ -48,14 +49,13 @@
       }
       @media print {
         page {
-          margin: 0;
-          border: initial;
-          border-radius: initial;
-          width: initial;
-          min-height: initial;
-          box-shadow: initial;
-          background: initial;
+          display: flex;
+          flex-direction: column;
           page-break-after: always;
+        }
+        .container {
+          width: 89% !important;
+          margin: 0 auto;
         }
       }
       /* header */
@@ -65,11 +65,11 @@
         place-items: center;
       }
       .header_logo img {
-        height: 38px;
-        width: 300px;
+        height: 35px;
+        width: 280px;
       }
       .header .nav_right_side img {
-        width: 200px;
+        width: 170px;
       }
       /* page bottom */
       .page_button {
@@ -120,8 +120,8 @@
         z-index: 10 !important;
       }
       .page_1_logo img {
-        height: 38px;
-        width: 300px;
+        height: 35px;
+        width: 280px;
       }
       .page_1 .main_content {
         height: 100%;
@@ -180,12 +180,13 @@
       }
       .page_2_upper_content .dtl {
         line-height: 23px;
+        margin-top: 40px;
       }
       .page_2_upper_content .person {
         margin: 20px 0px;
       }
       .page_2_upper_content .person img {
-        width: 170px;
+        width: 155px;
       }
       .page_2_upper_content .person .detail {
         display: flex;
@@ -495,8 +496,8 @@
       }
 
       .page_6 .main_content .middle_contetn .item img {
-        height: 80px;
-        width: 100px;
+        height: 60px;
+        width: 80px;
       }
       .page_6 .main_content .middle_contetn .item:nth-child(2) {
         flex-direction: row-reverse;
@@ -560,15 +561,15 @@
         width: 70px;
       }
       .page_6 .main_content .testimonial .item .description {
-        font-size: 16px;
-        line-height: 23px;
+        font-size: 14px;
+        line-height: 20px;
         letter-spacing: 0.5px;
         color: #9f9d9d;
       }
       /* ----------- page 7 ------ */
       .page_7 .main_content .items .item_1 {
         background: #fac800;
-        padding: 30px 60px 55px 60px;
+        padding: 20px 60px 40px 60px;
         border-bottom-right-radius: 70px;
         border-top-left-radius: 70px;
         text-align: center;
@@ -612,7 +613,7 @@
       .page_7 .main_content .items .left_side {
         display: flex;
         flex-direction: column;
-        gap: 60px;
+        gap: 50px;
         width: 50%;
       }
       .page_7 .main_content .items .left_side .item {
@@ -637,10 +638,12 @@
         place-items: end;
       }
       .page_7 .main_content .items .left_side .item .top .top_left p {
-        font-size: 22px;
+        font-size: 20px;
         letter-spacing: 0.5px;
         font-weight: 600;
         line-height: 30px;
+        position: relative;
+        top: 5px;
       }
       .page_7 .main_content .items .left_side .item .top .top_left .image img {
         width: 100px;
@@ -669,8 +672,8 @@
         left: 0px;
       }
       .page_7 .main_content .items .left_side .item .description {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 15px;
+        line-height: 20px;
         letter-spacing: 0.3px;
       }
       /* contetn right side */
@@ -714,8 +717,8 @@
         font-weight: 600;
       }
       .page_7 .main_content .items .right_side .item .top div .image img {
-        width: 90px;
-        height: 70px;
+        width: 80px;
+        height: 60px;
       }
 
       .page_7 .main_content .items .right_side .item .top .circle span {
@@ -731,9 +734,9 @@
       }
 
       .page_7 .main_content .items .right_side .item .description {
-        font-size: 16px;
+        font-size: 15px;
         letter-spacing: 0.3px;
-        line-height: 25px;
+        line-height: 22px;
         text-align: end;
       }
 
@@ -786,7 +789,7 @@
         gap: 15px;
       }
       .page_8 .main_content .botom_list_items .item {
-        width: 40%;
+        width: 45%;
         display: flex;
         justify-content: space-between;
         font-weight: 600;
@@ -815,7 +818,7 @@
 
       .page_9 .main_content .top_item {
         background: #fac800;
-        padding: 30px 60px 40px 60px;
+        padding: 20px 60px 40px 60px;
         border-bottom-right-radius: 70px;
         border-top-left-radius: 70px;
         text-align: center;
